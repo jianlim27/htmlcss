@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table</title>
+
+    <style>
+        table, th, td{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+    <div>
+        <fieldset>
+            <legend>Invoice Details</legend>
+            <label>Invoice To:</label>
+            <input type="text" name="full_name" maxlength="20" required placeholder="Full Name"/>
+            <div>
+                <label>Contact #</label>
+                <input type="text" name="contact_number" maxlength="11" required placeholder="Contact Number"/>
+                <label>Date</label>
+                <input type="date" name="date" required/>
+            </div>
+        </fieldset>
+    <div>
+        
+    <table style="width: 100%;">
+    <thread>
+        
+        <tr>
+            
+            <th style="width:300px">Item Descriptions</th>
+            <th style="width:50px;height:20px">Qty.</th>
+            <th style="width:250px;height:20px">Unit Price</th>
+            <th style="width:150px">Amount</th>
+        </tr>
+
+        <tr>
+            <td style="text-align:left"><textarea name="remarks"rows="3" cols="50" maxlength="50" required></textarea></td>
+            <td style="text-align:center"><input type="number" name="quantity" required/></td>
+            <td style="text-align:center"><input type="number" name="quantity" required/></td>
+            <td style="text-align:center"><input type="number" name="quantity" required/></td>
+        </tr>
+
+        <tr>
+            <td style="text-align:left"><textarea name="remarks"rows="3" cols="50" maxlength="50" required></textarea></td>
+            <td style="text-align:center"><input type="number" name="unit_price" required/></td>
+            <td style="text-align:center"><input type="number" name="unit_price" required/></td>
+            <td style="text-align:center"><input type="number" name="unit_price" required/></td>
+        </tr>
+
+        <tr>
+            <td style="text-align:left"><textarea name="remarks"rows="3" cols="50" maxlength="50" required></textarea></td>
+            <td style="text-align:center"><input type="number" name="amount" required/></td>
+            <td style="text-align:center"><input type="number" name="amount" required/></td>
+            <td style="text-align:center"><input type="number" name="amount" required/></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" style="text-align:right"><b>Subtotal:</b></td>
+            <td>350</td>
+        </tr>
+
+        <tr>
+            <td colspan="3" style="text-align:right"><b>VAT:</b></td>
+            <td>12%</td>
+        </tr>
+
+        <tr>
+            <td colspan="3" style="text-align:right"><b>Total:</b></td>
+            <td>308</td>
+        </tr>
+
+    </thread>
+    </table>
+
+
+
+    </div>
+    </div>
+    </section>
+    <div>
+        <section>
+            <fieldset>
+                <legend>Additional Details</legend>
+                <label>Payment Method</label>
+                <select name="payment_method" style="width: 150px" required>
+                    <option value="">-- Payment Method --</option>
+                    <option value="S">Cash on Delivery</option>
+                    <option value="M">Credit Card</option>
+                    <option vlaue="D">Gcash</option>
+                    <option vlaue="D">Paypal</option>
+                </select>
+                <div>
+                    <input id="radio_1" type="radio" name="radio_option" value="1"/>
+                    <label for="radio_1">Home</label>
+                    <input id="radio_2" type="radio" name="radio_option" value="1"/>
+                    <label for="radio_2">Office</label>
+                </div>
+                <div>
+                    <textarea name="remarks"rows="3" cols="50" maxlength="50" required placeholder="Delivery Address"></textarea>
+                </div>
+            </fieldset>
+        </section>
+    </div>
+    <div>
+        <input type="button" value="SUBMIT"/>
+    </div>
+
+</body>
+
+
+
+
+
+</html>
